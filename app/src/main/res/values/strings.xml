@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">ComposeExam</string>
+    <string name="app_name">Елдърс Апп</string>
+    <string name="repositories"> Проекта</string>
+    <string name="icon">окинка</string>
+    <string name="gists">Бързи връзки</string>
+    <string name="company">иконка компания</string>
+    <string name="followers"> последователи</string>
+    <string name="follows"> последвани</string>
+    <string name="not_available">не е наличен</string>
+    <string name="repos"> Проекта</string>
 </resources>
