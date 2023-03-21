@@ -45,6 +45,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import bg.gan.composeexam.R
+import bg.gan.composeexam.utilities.UserEvent
+import bg.gan.composeexam.viewModel.UserViewModel
 import coil.compose.rememberAsyncImagePainter
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
