@@ -1,4 +1,4 @@
-package bg.gan.composeexam.ui.theme
+package bg.gan.composeexam.userInterface.theme
 
 import androidx.compose.ui.graphics.Color
 
