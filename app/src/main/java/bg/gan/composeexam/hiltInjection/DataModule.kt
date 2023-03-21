@@ -1,12 +1,12 @@
 package bg.gan.composeexam.hiltInjection
 
 import android.app.Application
+import bg.gan.composeexam.BuildConfig
 import bg.gan.composeexam.model.apiService.ApiService
 import bg.gan.composeexam.model.apiService.AuthorizationInterceptor
 import bg.gan.composeexam.utilities.BASE_URL
 import bg.gan.composeexam.utilities.CACHE_NAME
 import bg.gan.composeexam.utilities.jsonDefaultInstance
-import com.elders.junior.BuildConfig
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides

@@ -10,10 +10,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
-import com.elders.eldersjunior.navigation.HomeTabs
-import com.elders.eldersjunior.navigation.addHomeGraph
-import com.elders.eldersjunior.ui.screens.UserDetailsScreen
-import com.elders.eldersjunior.ui.vm.UserViewModel
+import bg.gan.composeexam.userInterface.layouts.UserDetailsScreen
+import bg.gan.composeexam.viewModel.UserViewModel
+
 
 sealed class DashDestinations(val route: String) {
     object HomeRoute : DashDestinations("home")

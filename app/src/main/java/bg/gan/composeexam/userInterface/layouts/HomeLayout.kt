@@ -20,6 +20,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import bg.gan.composeexam.userInterface.searchLottieRandom.ErrorLottieAnimation
+import bg.gan.composeexam.userInterface.searchLottieRandom.LoadingLottieAnimation
+import bg.gan.composeexam.userInterface.searchLottieRandom.ProfileDetailsScreen
+import bg.gan.composeexam.userInterface.searchLottieRandom.SearchField
+import bg.gan.composeexam.viewModel.UserViewModel
 
 @Composable
 fun HomeScreen(

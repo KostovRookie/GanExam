@@ -1,6 +1,6 @@
 package bg.gan.composeexam.model.repository
 
-import com.elders.eldersjunior.utilities.State
+import bg.gan.composeexam.utilities.State
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException

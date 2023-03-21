@@ -5,7 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.elders.eldersjunior.ui.screens.SplashScreen
+import bg.gan.composeexam.userInterface.layouts.SplashScreen
 
 
 object MainDestination {

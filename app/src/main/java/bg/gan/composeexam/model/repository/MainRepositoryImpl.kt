@@ -3,10 +3,8 @@ package bg.gan.composeexam.model.repository
 import bg.gan.composeexam.model.apiService.ApiService
 import bg.gan.composeexam.model.remoteData.GetUserRepositoriesResponse
 import bg.gan.composeexam.model.remoteData.GetUserResponse
-import bg.gan.composeexam.model.repository.BaseRepository
-import bg.gan.composeexam.model.repository.MainRepository
+import bg.gan.composeexam.utilities.State
 
-import com.elders.eldersjunior.utilities.State
 import javax.inject.Inject
 
 class MainRepositoryImpl @Inject constructor(

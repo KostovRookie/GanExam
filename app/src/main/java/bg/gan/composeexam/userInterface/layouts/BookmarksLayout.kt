@@ -11,12 +11,17 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import bg.gan.composeexam.userInterface.searchLottieRandom.BookmarkLottieAnimation
+import bg.gan.composeexam.userInterface.searchLottieRandom.CustomTopBar
+import bg.gan.composeexam.userInterface.searchLottieRandom.ProfileDetailsScreen
+import bg.gan.composeexam.viewModel.DatabaseViewModel
 import kotlinx.coroutines.launch
 
 @Composable

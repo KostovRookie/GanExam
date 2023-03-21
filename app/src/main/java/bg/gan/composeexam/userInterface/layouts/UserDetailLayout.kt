@@ -26,10 +26,14 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import bg.gan.composeexam.R
 import bg.gan.composeexam.model.remoteData.GetUserResponse
+import bg.gan.composeexam.userInterface.searchLottieRandom.CustomTopBar
+import bg.gan.composeexam.userInterface.searchLottieRandom.RepositoryCard
 import bg.gan.composeexam.userInterface.theme.taupe100
+import bg.gan.composeexam.viewModel.DatabaseViewModel
+import bg.gan.composeexam.viewModel.UserRepositoryViewModel
 import coil.compose.rememberAsyncImagePainter
-import com.elders.junior.R
 import com.google.accompanist.pager.*
 import kotlinx.coroutines.launch
 
@@ -79,7 +83,7 @@ fun UserDetailsScreen(
 @Composable
 fun Details(
     userResponse: GetUserResponse,
-    userRepoViewModel: UserRepoViewModel = hiltViewModel(),
+    userRepoViewModel: UserRepositoryViewModel = hiltViewModel(),
     modifier: Modifier
 ) {
     val tabs = listOf(
@@ -243,7 +247,7 @@ fun Details(
 @Composable
 fun TabContent( //content repository tab to show them in a column
     pagerState: PagerState,
-    userRepoViewModel: UserRepoViewModel,
+    userRepoViewModel: UserRepositoryViewModel,
     username: String
 ) {
 

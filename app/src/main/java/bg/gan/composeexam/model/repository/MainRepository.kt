@@ -1,8 +1,9 @@
 package bg.gan.composeexam.model.repository
 
-import com.elders.eldersjunior.data.remoteData.GetUserRepositoriesResponse
-import com.elders.eldersjunior.data.remoteData.GetUserResponse
-import com.elders.eldersjunior.utilities.State
+import bg.gan.composeexam.model.remoteData.GetUserRepositoriesResponse
+import bg.gan.composeexam.model.remoteData.GetUserResponse
+import bg.gan.composeexam.utilities.State
+
 
 interface MainRepository {
 

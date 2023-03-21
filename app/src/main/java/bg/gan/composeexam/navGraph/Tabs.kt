@@ -1,4 +1,4 @@
-package com.elders.eldersjunior.navigation
+package bg.gan.composeexam.navGraph
 
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -13,8 +13,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.elders.eldersjunior.ui.screens.BookmarksScreen
-import com.elders.eldersjunior.ui.screens.HomeScreen
+import bg.gan.composeexam.userInterface.layouts.BookmarksScreen
+import bg.gan.composeexam.userInterface.layouts.HomeScreen
 
 
 enum class HomeTabs(
