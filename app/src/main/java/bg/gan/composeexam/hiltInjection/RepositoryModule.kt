@@ -14,5 +14,7 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindRepository(mainRepositoryImpl: MainRepositoryImpl): MainRepository
+    //advantage of using @Binds is that it reduces the amount of code generated (such as Module Factory classes).
+    // Less code to generate means the Kapt plugin has less work to do which can speed up build times in larger projects.
 
 }

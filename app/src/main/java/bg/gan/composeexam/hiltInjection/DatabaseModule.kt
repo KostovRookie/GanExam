@@ -13,7 +13,7 @@ import kotlinx.coroutines.Dispatchers
 import javax.inject.Singleton
 import kotlin.coroutines.CoroutineContext
 
-//database builder
+//database builder injected with Hilt in repository
 @InstallIn(SingletonComponent::class)
 @Module
 class DatabaseModule {

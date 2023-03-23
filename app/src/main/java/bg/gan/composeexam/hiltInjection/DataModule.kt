@@ -25,8 +25,8 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 
-
 //retrofit builder with json serialization and using interceptor
+// both for cache and authorization used for token secrity
 @Module
 @InstallIn(SingletonComponent::class)
 object DataModule {
@@ -48,8 +48,8 @@ object DataModule {
         if (BuildConfig.DEBUG) okHttpClient
             .addInterceptor(loggingInterceptor)
             .addInterceptor(
-            AuthorizationInterceptor()
-        )
+                AuthorizationInterceptor()
+            )
         return okHttpClient.build()
     }
 
@@ -63,9 +63,12 @@ object DataModule {
             .baseUrl(BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(
-          //      Json.asConverterFactory(contentType)
+
+
+                // here I can use GsonConverter as factory, but kotlin serialization was used in this case
+                //      Json.asConverterFactory(contentType)
                 jsonDefaultInstance
-                  .asConverterFactory(contentType)
+                    .asConverterFactory(contentType)
             )
             .build()
     }
@@ -93,6 +96,10 @@ object DataModule {
             .build()
     }
 
+
+    //When we make a network call to fetch the data from the server.
+    // For the very first time, it will get the data from the server and it will cache the HTTP response on the client.
+    // Then, if we make the same API call again, it will return the data from the cache instantly.
     @Provides
     @Singleton
     fun providesCache(app: Application): Cache {
