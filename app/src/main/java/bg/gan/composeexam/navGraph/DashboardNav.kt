@@ -9,6 +9,8 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 
+
+//navigation for bottom bar with 2 tabs
 @Composable
 fun DashboardNav(
 

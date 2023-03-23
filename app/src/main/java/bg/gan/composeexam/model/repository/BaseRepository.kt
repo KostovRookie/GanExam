@@ -4,7 +4,7 @@ import bg.gan.composeexam.utilities.State
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException
-
+//infinished but will work on the error response
 open class BaseRepository {
     suspend fun <T> safeApiCall(apiCall: suspend () -> T): State<T> {
        return withContext(Dispatchers.IO){

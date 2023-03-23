@@ -26,6 +26,9 @@ import bg.gan.composeexam.userInterface.searchLottieRandom.ProfileDetailsScreen
 import bg.gan.composeexam.userInterface.searchLottieRandom.SearchField
 import bg.gan.composeexam.viewModel.UserViewModel
 
+
+
+//Начален екран
 @Composable
 fun HomeScreen(
     userViewModel: UserViewModel = hiltViewModel(),

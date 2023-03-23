@@ -24,6 +24,9 @@ import bg.gan.composeexam.userInterface.searchLottieRandom.ProfileDetailsScreen
 import bg.gan.composeexam.viewModel.DatabaseViewModel
 import kotlinx.coroutines.launch
 
+
+
+//composing bookmarks screen
 @Composable
 fun BookmarksScreen(
     modifier: Modifier = Modifier,

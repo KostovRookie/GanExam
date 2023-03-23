@@ -16,7 +16,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import bg.gan.composeexam.userInterface.layouts.BookmarksScreen
 import bg.gan.composeexam.userInterface.layouts.HomeScreen
 
-
+//modifying bottom app par icons and behaviour
 enum class HomeTabs(
     val title: String,
     val icon: ImageVector,

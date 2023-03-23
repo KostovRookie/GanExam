@@ -18,6 +18,10 @@ sealed class DashDestinations(val route: String) {
     object HomeRoute : DashDestinations("home")
     object UserDetail: DashDestinations("{user}/detail")
 
+
+
+    // creating route for specific user page
+    //to navigate to specific details
     fun createRoute(user:String) = "$user/detail"
 }
 

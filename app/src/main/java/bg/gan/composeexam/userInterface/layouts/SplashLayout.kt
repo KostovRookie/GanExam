@@ -49,7 +49,7 @@ fun SplashScreen(
         }
 
     }
-
+    //little delay to help app load and prepare
     produceState(initialValue = -1){
         delay(3000)
         navToHomeScreen()

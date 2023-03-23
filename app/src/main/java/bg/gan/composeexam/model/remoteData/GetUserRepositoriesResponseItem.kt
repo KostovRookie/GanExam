@@ -4,6 +4,8 @@ import kotlinx.serialization.Serializable
 
 // this data class is used only for the repository column and row
 // in user details, separate get request
+// using plugin to fetch all parameters from API
+// but using only a few
 @Serializable
 data class GetUserRepositoriesResponseItem(
     val allow_forking: Boolean?=false,

@@ -12,6 +12,8 @@ abstract class AppDatabase: RoomDatabase() {
 @Dao
 interface BookmarksDao {
 
+    //simple SQL commands to work with Room database, to order, delete, add users to table
+
     @Query("SELECT * FROM bookmarks_table ORDER BY id ASC")
     fun getBookmarks(): LiveData<List<Bookmarks>>
 

@@ -6,6 +6,7 @@ import bg.gan.composeexam.utilities.State
 
 
 interface MainRepository {
+    // interface to work with ue case for simplicity and cleaner code
 
     suspend fun getUser(user: String): State<GetUserResponse>
 

@@ -10,6 +10,7 @@ import kotlinx.serialization.Serializable
 
 //main data class used to show info of specific user
 //database get data from here
+//ads to Bookmarks class
 open class GetUserResponse(
     var avatar_url: String? = "",
     var bio: String? = "",
@@ -28,6 +29,7 @@ open class GetUserResponse(
     var html_url: String? = "",
     @PrimaryKey(autoGenerate = true)
     var id: Int? = 0,
+    // primary key for table with id
     var location: String? = "",
     var login: String? = "",
     var name: String? = "",

@@ -7,7 +7,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import bg.gan.composeexam.userInterface.layouts.SplashScreen
 
-
+//main navigation with splash screen animation
+//error persists when going back you can still view Splash screen
 object MainDestination {
     const val SPLASH_SCREEN_ROUTE = "splash"
 }
