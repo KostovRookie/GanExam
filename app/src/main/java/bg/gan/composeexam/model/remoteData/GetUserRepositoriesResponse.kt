@@ -3,5 +3,5 @@ package bg.gan.composeexam.model.remoteData
 import kotlinx.serialization.Serializable
 
 
-@Serializable
+//@Serializable
 class GetUserRepositoriesResponse : ArrayList<GetUserRepositoriesResponseItem>()

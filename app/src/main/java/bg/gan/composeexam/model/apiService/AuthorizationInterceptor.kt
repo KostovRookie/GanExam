@@ -1,5 +1,6 @@
 package bg.gan.composeexam.model.apiService
 
+import bg.gan.composeexam.utilities.TOKEN
 import okhttp3.Interceptor
 import okhttp3.Response
 import javax.inject.Singleton
@@ -12,7 +13,7 @@ class AuthorizationInterceptor : Interceptor {
         val builder = chain.request().newBuilder()
         builder.header("Accept", "application/json")
         builder.header("Authorization", "token " +
-               // "$TOKEN" +
+                "$TOKEN" +
                 "")
 
         return chain.proceed(builder.build())

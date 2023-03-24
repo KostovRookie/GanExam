@@ -7,6 +7,7 @@ import bg.gan.composeexam.model.apiService.AuthorizationInterceptor
 import bg.gan.composeexam.utilities.BASE_URL
 import bg.gan.composeexam.utilities.CACHE_NAME
 import bg.gan.composeexam.utilities.jsonDefaultInstance
+import com.google.gson.Gson
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides
@@ -20,6 +21,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
@@ -63,13 +65,14 @@ object DataModule {
             .baseUrl(BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(
+                GsonConverterFactory.create())
 
 
                 // here I can use GsonConverter as factory, but kotlin serialization was used in this case
                 //      Json.asConverterFactory(contentType)
-                jsonDefaultInstance
-                    .asConverterFactory(contentType)
-            )
+//                GsonconverterFactory.
+//                    .asConverterFactory(contentType)
+//            )
             .build()
     }
 

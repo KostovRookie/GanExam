@@ -2,7 +2,7 @@ package bg.gan.composeexam.model.remoteData
 
 import kotlinx.serialization.Serializable
 
-@Serializable
+//@Serializable
 data class License(
     val key: String?="",
     val name: String?="",

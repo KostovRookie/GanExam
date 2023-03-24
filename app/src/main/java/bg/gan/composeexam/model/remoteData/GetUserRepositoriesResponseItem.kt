@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 // in user details, separate get request
 // using plugin to fetch all parameters from API
 // but using only a few
-@Serializable
+//@Serializable
 data class GetUserRepositoriesResponseItem(
     val allow_forking: Boolean?=false,
     val archive_url: String?="",

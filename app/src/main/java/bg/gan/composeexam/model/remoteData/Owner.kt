@@ -3,7 +3,7 @@ package bg.gan.composeexam.model.remoteData
 import kotlinx.serialization.Serializable
 
 
-@Serializable
+//@Serializable
 data class Owner(
     val avatar_url: String?="",
     val events_url: String?="",

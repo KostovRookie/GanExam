@@ -5,7 +5,7 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 import kotlinx.serialization.Serializable
 
-@Serializable
+//@Serializable
 @Entity(tableName = "response_table", indices = [Index(value = ["login"], unique = true)])
 
 //main data class used to show info of specific user
